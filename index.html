@@ -16,8 +16,9 @@
 			}
 
 			body {
-				//background-color: #427ea3;
-				background-color: #f2f2f2;
+				background-color: #00334d;
+				background-image: url("http://www.sevenoaksart.co.uk/images/snow-transparent.gif");
+				background-size: 100%;
 				font-family: "Tahoma", sans-serif, Geneva, sans-serif;
 				font-family: "Helvetica", sans-serif, Arial, sans-serif;
 				//color: #25465b;
@@ -41,7 +42,9 @@
 			
 			.container {
 				margin-top: 10px;
-				margin-left: 225px;
+				//margin-left: 225px;
+				margin-left: 150px;
+				margin-right: 150px;
 				margin-bottom: 30px;
 				background-color: #ffffff;
 				padding: 20px;
@@ -97,19 +100,18 @@
     </head>
 	
 	<body>
-	
 		<div class = "container">
-			<p> Secret Santa stuff should be right below here, under the big text that says </p>
-			
-			<div id = "Secret_Santa"> <h2> Secret Santa </h2> </div>
+			<div id = "Secret_Santa"> <h1> Secret Santa </h1> </div>
 			<p> Type in your name and receive a predetermined name.<br>
 			It shouldn't be your own name. It should be a person. Please don't go looking for a gift for <em>undefined</em> </p>
-			<p> If something went wrong, please tell me as soon as possible or I can't fix it. </p>
+			<p> If something went wrong, please tell me as soon as possible so that I can fix it. </p>
 			</p>
 			<form id = "name_form">
-				Your name (like, YOUR name): <br> <br>
-				<input type="text" id="name"> <br>
+				Your name (like, YOUR name): <br style = "line-height: 1.5em;">
+				<input type="text" id="name"> <br style = "line-height: 1.5em;">
 			</form> 
+			
+			<br style = "line-height: 1.5em;">
 			
 			<!--
 			<button onclick="displayName()"> Enter </button>

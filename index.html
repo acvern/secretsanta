@@ -3,6 +3,8 @@
 <html>
 
 	<head>
+	
+		<link rel="icon" type="favicon/ico" href="https://www.blogger.com/favicon-image.g?blogID=8180955075875423877">
 		
 		<style>
 			
@@ -14,16 +16,22 @@
 			a {
 				text-decoration: none;
 			}
-
+			
+			@media only screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			
 			body {
 				background-color: #00334d;
 				background-image: url("http://www.sevenoaksart.co.uk/images/snow-transparent.gif");
-				background-repeat: no-repeat;
+				background-repeat: repeat-y;
 				background-size: 100%;
 				font-family: "Tahoma", sans-serif, Geneva, sans-serif;
 				font-family: "Helvetica", sans-serif, Arial, sans-serif;
 				//color: #25465b;
-				color: #404040;
+				color: #002233;
 				
 			}
 			
@@ -95,21 +103,24 @@
 			.dropdown a:hover {
 				background-color: #b3b3b3;
 			}
-
 		</style>
 		
     </head>
 	
 	<body>
+		<title> Secret Santa </title>
+		
 		<div class = "container">
 			<div id = "Secret_Santa"> <h1> Secret Santa </h1> </div>
+			<hr></hr>
+			<h5> <a href = "https://alvernchen.github.io"> Or go to my homepage </a> </h5>
 			<p> Type in your name and receive a predetermined name.<br>
 			It shouldn't be your own name. It should be a person. Please don't go looking for a gift for <em>undefined</em> </p>
-			<p> If something went wrong, please tell me as soon as possible so that I can fix it. </p>
+			<p> If something went wrong, please tell me so that I can fix it. </p>
 			</p>
 			<form id = "name_form">
 				Your name (like, YOUR name): <br style = "line-height: 1.5em;">
-				<input type="text" id="name"> <br style = "line-height: 1.5em;">
+				<input type="text" id="name" style="font-size: 24px;"> <br style = "line-height: 1.5em;">
 			</form> 
 			
 			<br style = "line-height: 1.5em;">
@@ -118,7 +129,7 @@
 			<button onclick="displayName()"> Enter </button>
 			-->
 			
-			<p id = "rec"> You are sending a gift to ... </p>
+			<p id = "rec"> You are sending a gift to someone. Happy Holidays! </p>
 
 			<script src = "santa.js"></script>
 		</div>

@@ -52,11 +52,11 @@ function displayName() {
 	name = name.charAt(0).toUpperCase() + name.slice(1);
 	
     if (listOfNames.indexOf(name) !== -1) {
-		document.getElementById("rec").innerHTML = "You are sending a gift to " + finalNames[listOfNames.indexOf(name)] + ".";
+		document.getElementById("rec").innerHTML = "You are sending a gift to " + finalNames[listOfNames.indexOf(name)] + ". Happy Holidays!";
 		//return true;
     }
     else {
-		document.getElementById("rec").innerHTML = "Invalid entry, please make sure your name is spelled correctly.";
+		document.getElementById("rec").innerHTML = "Please enter a valid name. Happy Holidays!";
 		//return false;
     }
 }

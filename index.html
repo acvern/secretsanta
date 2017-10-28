@@ -17,12 +17,6 @@
 				text-decoration: none;
 			}
 			
-			@media only screen and (max-width: 600px) {
-				body {
-					font-size: 150%;
-				}
-			}
-			
 			body {
 				background-color: #00334d;
 				background-image: url("http://www.sevenoaksart.co.uk/images/snow-transparent.gif");
@@ -51,6 +45,7 @@
 			
 			.container {
 				margin: auto;
+				margin-top: 10px;
 				margin-bottom: 30px;
 				width: 67%;
 				min-width: 67%;
@@ -72,37 +67,18 @@
 				left: 0px;
 				top: 15px;
 			}
-			
-			.contentHeader {
-				width: 120px;
-				height: 24px;
-				font-size: 16px;
-				letter-spacing: 0.5px;
-				background-color: #641e09;
-				color: #ffffff;
-				text-align: center;
-				//cursor: pointer;
-				display: flex;
-				justify-content: left;
-				padding: 10px;
-				padding-left: 20px;
-				padding-right: 20px;
-				align-items: center;
-				cursor: pointer;
-			}
-			
-			.contentHeader:hover, .contentHeader:focus {
-				background-color: #8c2b0d;
-			}
 
-			.dropdown {
-				position: relative;
-				display: inline-block;
+			@media only screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+				.container {
+					width: 80%;
+					min-width: 80%;
+					max-width: 100%;
+				}
 			}
 			
-			.dropdown a:hover {
-				background-color: #b3b3b3;
-			}
 		</style>
 		
     </head>

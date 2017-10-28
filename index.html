@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<style>
+			
+			html {
+				position: relative;
+				min-height: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+
+			body {
+				//background-color: #427ea3;
+				background-color: #f2f2f2;
+				font-family: "Tahoma", sans-serif, Geneva, sans-serif;
+				font-family: "Helvetica", sans-serif, Arial, sans-serif;
+				//color: #25465b;
+				color: #404040;
+				
+			}
+			
+			hr {
+				//color: #25465b;
+				color: #a8a8a8;
+				width = 80%;
+			}
+
+			ol {
+				line-height: 1.5em;
+			}
+			
+			p {
+				line-height: 1.5em;
+			}
+			
+			.container {
+				margin-top: 10px;
+				margin-left: 225px;
+				margin-bottom: 30px;
+				background-color: #ffffff;
+				padding: 20px;
+				padding-top: 5px;
+			}
+
+			.contentBar {
+				width: 160px;
+				height: 360px;
+				position: fixed;
+				//background-color: #ffffff;
+				//padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 20px;
+				padding-bottom: 10px;
+				left: 0px;
+				top: 15px;
+			}
+			
+			.contentHeader {
+				width: 120px;
+				height: 24px;
+				font-size: 16px;
+				letter-spacing: 0.5px;
+				background-color: #641e09;
+				color: #ffffff;
+				text-align: center;
+				//cursor: pointer;
+				display: flex;
+				justify-content: left;
+				padding: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				align-items: center;
+				cursor: pointer;
+			}
+			
+			.contentHeader:hover, .contentHeader:focus {
+				background-color: #8c2b0d;
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			
+			.dropdown a:hover {
+				background-color: #b3b3b3;
+			}
+
+		</style>
+		
+    </head>
+	
+	<body>
+	
+		<div class = "container">
+			<p> Secret Santa stuff should be right below here, under the big text that says </p>
+			
+			<div id = "Secret_Santa"> <h2> Secret Santa </h2> </div>
+			<p> Type in your name and receive a predetermined name.<br>
+			It shouldn't be your own name. It should be a person. Please don't go looking for a gift for <em>undefined</em> </p>
+			<p> If something went wrong, please tell me as soon as possible or I can't fix it. </p>
+			</p>
+			<form id = "name_form">
+				Your name (like, YOUR name): <br> <br>
+				<input type="text" id="name"> <br>
+			</form> 
+			
+			<!--
+			<button onclick="displayName()"> Enter </button>
+			-->
+			
+			<p id = "rec"> You are sending a gift to ... </p>
+
+			<script src = "santa.js"></script>
+		</div>
+	
+	</body>
+
+</html>		

@@ -2,16 +2,22 @@ import random
 
 """
 Alvern Chen
-Secret Santa Name Organizer v0.1
+Secret Santa Name Organizer v0.2
 Matches names to each other without the hassle of human contact!
-Last modified September 15, 2016
+Last modified November 29, 2016
 """
 
-name_list = open("names.txt", "r")
-names = []
+name_list = open("names.txt", "w")
+names = ["Alex", "Alvern", "Benny", "Benson"] + \
+      ["Calvin", "Franklin", "Jeffrey", "Josephine", "Joyce"] +\
+      ["Justin", "Kelvin", "Kris", "Matthew", "Nathan"] +\
+      ["Richard", "Sabrina", "Vishal", "Youeel", "Yuanxin", "Zoe"]
 
-for name in name_list.readlines():
-    names.append(name.strip())
+for name in range(0, len(names)):
+    if name == (len(names) - 1):
+        name_list.write(names[name])
+    else:
+        name_list.write(names[name] + " ")
     
 name_list.close()
 
@@ -29,11 +35,11 @@ def main():
     
     final_list = open ("final.txt", "w")
     
-    final_list.write("%-24s" % "Giver" + "Receiver" + "\n")
-    final_list.write("=" * 48 + "\n")
-    
     for line in range(0, len(names)):
-        final_list.write("%-24s" % names[line] + receive[line] + "\n")
+        if line == (len(names) - 1):
+            final_list.write(receive[line])
+        else:
+            final_list.write(receive[line] + " ")
     
     final_list.close()
             

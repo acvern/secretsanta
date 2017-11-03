@@ -1,6 +1,6 @@
 /*
 Secret Santa front-end
-Last modified October 28, 2017
+Last modified November 3, 2017
 */
 
 var listOfNames = [];

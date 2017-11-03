@@ -25,7 +25,7 @@ function loadNames() {
       	    listOfNames = this.responseText.trim().split(" ");
        	}
     };
-    xmlhttp.open("GET", "https://raw.githubusercontent.com/alvernchen/secretsanta/gh-pages/names.txt", true);
+    xmlhttp.open("GET", "https://raw.githubusercontent.com/alvernchen/alvernchen.github.io/master/names.txt", true);
     xmlhttp.send();
 }
 
@@ -42,7 +42,7 @@ function loadFinal() {
 	    finalNames = this.responseText.trim().split(" ");
 	}
     };
-    xmlhttp.open("GET", "https://raw.githubusercontent.com/alvernchen/secretsanta/gh-pages/final.txt", true);
+    xmlhttp.open("GET", "https://raw.githubusercontent.com/alvernchen/alvernchen.github.io/master/final.txt", true);
     xmlhttp.send();
 }
         

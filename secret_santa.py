@@ -9,7 +9,7 @@ Last modified December 6, 2017
 
 name_list = open("names.txt", "w")
 names = ["Alex", "Alvern", "Benny", "Benson"] + \
-      ["Calvin", "Franklin", "Jeffrey", "Joyce"] +\
+      ["Calvin", "Jeffrey", "Joyce"] +\
       ["Kris", "Matthew", "Madison"] +\
       ["Sabrina", "Yuanxin"]
 

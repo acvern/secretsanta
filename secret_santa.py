@@ -4,14 +4,14 @@ import random
 Alvern Chen
 Secret Santa Name Organizer v0.2
 Matches names to each other without the hassle of human contact!
-Last modified November 29, 2016
+Last modified December 6, 2017
 """
 
 name_list = open("names.txt", "w")
 names = ["Alex", "Alvern", "Benny", "Benson"] + \
-      ["Calvin", "Franklin", "Jeffrey", "Josephine", "Joyce"] +\
-      ["Justin", "Kelvin", "Kris", "Matthew", "Nathan"] +\
-      ["Richard", "Sabrina", "Vishal", "Youeel", "Yuanxin", "Zoe"]
+      ["Calvin", "Franklin", "Jeffrey", "Joyce"] +\
+      ["Kris", "Matthew", "Madison"] +\
+      ["Sabrina", "Yuanxin"]
 
 for name in range(0, len(names)):
     if name == (len(names) - 1):
